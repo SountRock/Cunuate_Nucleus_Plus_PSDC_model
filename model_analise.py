@@ -307,7 +307,7 @@ def megaTargetFuncOnlySyn(savePath,
             ISpikes = transformDictToMatrix(ISpikes)
 
             ESpikes_align = align_by_first_spike(ESpikes, t_phase=0.0)
-            ISpikes_align = align_by_first_spike(ESpikes, t_phase=0.0)
+            ISpikes_align = align_by_first_spike(ISpikes, t_phase=0.0)
             value_align = align_by_first_spike(value, t_phase=0.0)
 
             save_phase_histogram_data_to_json(
